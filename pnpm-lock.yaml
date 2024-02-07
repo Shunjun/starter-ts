@@ -14,9 +14,9 @@ importers:
       '@antfu/ni':
         specifier: ^0.21.12
         version: 0.21.12
-      '@antfu/utils':
-        specifier: ^0.7.7
-        version: 0.7.7
+      '@shunjun/utils':
+        specifier: ^0.0.1
+        version: 0.0.1
       '@types/node':
         specifier: ^20.10.7
         version: 20.10.7
@@ -32,9 +32,6 @@ importers:
       lint-staged:
         specifier: ^15.2.0
         version: 15.2.0
-      pnpm:
-        specifier: ^8.14.0
-        version: 8.14.0
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
@@ -159,10 +156,6 @@ packages:
   /@antfu/ni@0.21.12:
     resolution: {integrity: sha512-2aDL3WUv8hMJb2L3r/PIQWsTLyq7RQr3v9xD16fiz6O8ys1xEyLhhTOv8gxtZvJiTzjTF5pHoArvRdesGL1DMQ==}
     hasBin: true
-    dev: true
-
-  /@antfu/utils@0.7.7:
-    resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: true
 
   /@babel/code-frame@7.22.13:
@@ -1078,6 +1071,7 @@ packages:
     resolution: {integrity: sha512-phLb1fN3rq2o1j1v+nKxXUTSJnAhzhU0hLrl7Qzb0fLpwkGMHDem+o6d+ZI8+/BlTXfMU4kVWGvy6g9k/B8L6Q==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -1086,6 +1080,7 @@ packages:
     resolution: {integrity: sha512-M2sDtw4tf57VPSjbTAN/lz1doWUqO2CbQuX3L9K6GWIR5uw9j+ROKCvvUNBY8WUbMxwaoc8mH9HmmBKsLht7+w==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -1094,6 +1089,7 @@ packages:
     resolution: {integrity: sha512-mHIlRLX+hx+30cD6c4BaBOsSqdnCE4ok7/KDvjHYAHoSuveoMMxIisZFvcLhUnyZcPBXDGZTuBoalcuh43UfQQ==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -1102,6 +1098,7 @@ packages:
     resolution: {integrity: sha512-tB+RZuDi3zxFx7vDrjTNGVLu2KNyzYv+UY8jz7e4TMEoAj7iEt8Qk6xVu6mo3pgjnsHj6jnq3uuRsHp97DLwOA==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -1129,6 +1126,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@shunjun/utils@0.0.1:
+    resolution: {integrity: sha512-CJeQlP3j/wG6kLa7j2Bq2bzcW6EX8XhqnlktQygn9hE5AFxH3wjuhpE/K0m6dQ/B7HspdtDMIS1R5CrPsOdkbQ==, tarball: https://registry.npmjs.org/@shunjun/utils/-/utils-0.0.1.tgz}
+    dev: true
 
   /@sinclair/typebox@0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -3661,12 +3662,6 @@ packages:
   /pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
-    dev: true
-
-  /pnpm@8.14.0:
-    resolution: {integrity: sha512-XUv5ezSfrxpRMYqhuoh+mdnDbiA9vLVZOKkf3dJFQkbLAHI9ZkL1TUY6D1KicB2t+N4AKjf8YTyc3JTtVnXdzg==}
-    engines: {node: '>=16.14'}
-    hasBin: true
     dev: true
 
   /postcss-selector-parser@6.0.13:
