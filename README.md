@@ -1,27 +1,22 @@
 # pkg-placeholder
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
+<!-- [![NPM Version][npm-version-src]][npm-version-href]
+[![NPM Downloads][npm-downloads-src]][npm-downloads-href]
 [![bundle][bundle-src]][bundle-href]
 [![JSDocs][jsdocs-src]][jsdocs-href]
-[![License][license-src]][license-href]
+[![License][license-src]][license-href] -->
 
 _description_
 
 > **Note**:
-> Replace `pkg-placeholder`, `_description_` and `antfu` globally to use this template.
+> Replace `pkg-placeholder`, `_description_` globally to use this template.
 
 ## Sponsors
 
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © 2023-PRESENT [ShunJun](https://github.com/shunjun)
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
