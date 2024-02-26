@@ -1,7 +1,4 @@
-import fs from 'node:fs'
-import MagicString from 'magic-string'
-
-const str = `function ButtonGroupItem(props: { button: API.ModuleView.ExtraElements }) {
+123123123ion ButtonGroupItem(props: { button: API.ModuleView.ExtraElements }) {
 	const { button } = props
 	const { appId, moduleId } = useOutsofts()
 
@@ -57,17 +54,3 @@ function MoreButtonItem(props: MoreButtonItemProps) {
 		</>
 	)
 }
-`
-
-const s = new MagicString(str)
-
-s.update(0, 5, '123123123')
-
-const map = s.generateMap({
-  source: 'converted.js',
-  file: 'converted.js.map',
-  includeContent: true,
-}) // generates a v3 sourcemap
-
-fs.writeFileSync('converted.js', s.toString())
-fs.writeFileSync('converted.js.map', map.toString())
