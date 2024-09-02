@@ -1,8 +1,9 @@
 // @ts-check
-import antfu from '@antfu/eslint-config'
+import eslintConfig from '@antfu/eslint-config'
 
-export default antfu(
+export default eslintConfig(
   {
+    // react: true,
     ignores: [
       // eslint ignore globs here
     ],
